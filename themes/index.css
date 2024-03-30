@@ -55,6 +55,14 @@
     background: #eaffdb;
   }
 
+  /* .wrapper__9916c path {
+    display: none;
+  } */
+  /* .wrapper__9916c .selected__501f5 .childWrapper_a6ce15,
+  .wrapper__9916c .childWrapper_a6ce15 {
+    background: white;
+  } */
+
   /* folder */
   .expandedFolderBackground_b1385f {
     opacity: 0.6;
@@ -124,7 +132,7 @@
   background: transparent;
 }
 
-/* top chat ================================ */
+/* header chat ================================ */
 .theme-light .themed_b152d4,
 .themed_b152d4 {
   background: transparent;
