@@ -28,4 +28,4 @@ There is no installation guide yet, but you can use [Vencord](https://vencord.de
 
 ## Contributing
 
-I need help with [Todo/Idea list](#todoidea-list), but any contributions or suggestions are welcome. Feel free to contribute to this project by forking this repository, making your changes, and submitting a pull request. Lastly please don't over do it, this theme is meant to be fun, simple, and user friendly (**don't change too much font or add too much animations, it will be hard to read and use**).
+I need help with [Todo/Idea list](#todoidea-list), but any contributions or suggestions are welcome. Feel free to contribute to this project by forking this repository, making your changes, and submitting a pull request. Lastly please don't over do it, this theme is meant to be cute, simple, and user friendly (**don't change too much font or add too much animations, it will be hard to read and use**).
