@@ -1,19 +1,443 @@
-.coverImage_b7e579 {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  color: white;
-  font-size: 14px;
-  font-family: "Whitney", sans-serif;
-  font-weight: 500;
-  line-height: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: background-color 0.1s;
+/**
+ * @name ame-chan
+ * @description Needy streamer overload inspired theme
+ * @author yume_0, re1nee_
+ * @version 0.0.1
+ * @source https://github.com/yuandahanif/ame-chan
+ * @authorId 378907976267726859
+*/
+
+:root {
+  --bg-gradient-mint-apple-1: hsl(var(--bg-gradient-mint-apple-1-hsl) / 1);
+  --bg-gradient-mint-apple-1-hsl: 166 calc(var(--saturation-factor, 1) * 39.7%)
+    52.5%;
+  --bg-gradient-mint-apple-2: hsl(var(--bg-gradient-mint-apple-2-hsl) / 1);
+  --bg-gradient-mint-apple-2-hsl: 119 calc(var(--saturation-factor, 1) * 40.4%)
+    55.9%;
+  --bg-gradient-mint-apple-3: hsl(var(--bg-gradient-mint-apple-3-hsl) / 1);
+  --bg-gradient-mint-apple-3-hsl: 87 calc(var(--saturation-factor, 1) * 48.3%)
+    59.8%;
+}
+
+.theme-light {
+  --shadow-border: 0 0 0 1px hsla(0, 0%, 0%, 0.08);
+  --shadow-border-filter: drop-shadow(0 0 1px hsla(0, 0%, 0%, 0.08));
+  --shadow-button-overlay: 0 12px 24px 0 hsla(0, 0%, 0%, 0.24);
+  --shadow-button-overlay-filter: drop-shadow(
+    0 12px 24px hsla(0, 0%, 0%, 0.24)
+  );
+  --shadow-high: 0 12px 36px 0 hsla(0, 0%, 0%, 0.12);
+  --shadow-high-filter: drop-shadow(0 12px 36px hsla(0, 0%, 0%, 0.12));
+  --shadow-ledge: 0 2px 0 0 hsla(0, 0%, 0%, 0.025),
+    0 1.5px 0 0 hsla(0, 0%, 0%, 0.025), 0 1px 0 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-ledge-filter: drop-shadow(0 1.5px 0 hsla(0, 0%, 0%, 0.12));
+  --shadow-low: 0 1px 4px 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-low-filter: drop-shadow(0 1px 4px hsla(0, 0%, 0%, 0.08));
+  --shadow-low-active: 0 0 4px 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-low-active-filter: drop-shadow(0 0 4px hsla(0, 0%, 0%, 0.08));
+  --shadow-low-hover: 0 4px 8px 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-low-hover-filter: drop-shadow(0 4px 8px hsla(0, 0%, 0%, 0.08));
+  --shadow-medium: 0 4px 8px 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-medium-filter: drop-shadow(0 4px 8px hsla(0, 0%, 0%, 0.08));
+  --shadow-mobile-navigator-x: 0 0 9px 0 hsla(0, 0%, 0%, 0.13);
+  --shadow-mobile-navigator-x-filter: drop-shadow(
+    0 0 9px hsla(0, 0%, 0%, 0.13)
+  );
+  --shadow-top-high: 0 -12px 36px 0 hsla(0, 0%, 0%, 0.12);
+  --shadow-top-high-filter: drop-shadow(0 -12px 36px hsla(0, 0%, 0%, 0.12));
+  --shadow-top-ledge: 0 -2px 0 0 hsla(0, 0%, 0%, 0.025),
+    0 -1.5px 0 0 hsla(0, 0%, 0%, 0.025), 0 -1px 0 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-top-ledge-filter: drop-shadow(0 -1.5px 0 hsla(0, 0%, 0%, 0.12));
+  --shadow-top-low: 0 -1px 4px 0 hsla(0, 0%, 0%, 0.08);
+  --shadow-top-low-filter: drop-shadow(0 -1px 4px hsla(0, 0%, 0%, 0.08));
+}
+
+.theme-light {
+  --action-sheet-gradient-bg: var(--primary-130);
+  --activity-card-background: var(--white-500);
+  --activity-card-icon-overlay: hsl(var(--primary-600-hsl) / 0.85);
+  --alert-bg: var(--white-500);
+  --android-navigation-bar-background: var(--primary-100);
+  --android-navigation-scrim-background: hsl(var(--primary-100-hsl) / 0.5);
+  --android-ripple: hsl(var(--black-500-hsl) / 0.12);
+  --background-accent: var(--primary-430);
+  --background-floating: var(--white-500);
+  --background-mentioned: hsl(var(--yellow-300-hsl) / 0.1);
+  --background-mentioned-hover: hsl(var(--yellow-300-hsl) / 0.2);
+  --background-message-automod: hsl(var(--red-400-hsl) / 0.05);
+  --background-message-automod-hover: hsl(var(--red-400-hsl) / 0.1);
+  --background-message-highlight: hsl(var(--brand-360-hsl) / 0.1);
+  --background-message-highlight-hover: hsl(var(--brand-360-hsl) / 0.2);
+  --background-message-hover: hsl(var(--primary-900-hsl) / 0.03);
+  --background-mobile-primary: var(--primary-100);
+  --background-mobile-secondary: var(--white-500);
+  --background-modifier-accent: hsl(var(--primary-400-hsl) / 0.24);
+  --background-modifier-accent-2: hsl(var(--primary-400-hsl) / 0.16);
+  --background-modifier-active: hsl(var(--primary-400-hsl) / 0.2);
+  --background-modifier-hover: hsl(var(--primary-400-hsl) / 0.16);
+  --background-modifier-selected: hsl(var(--primary-400-hsl) / 0.24);
+  --background-nested-floating: var(--white-500);
+  --background-primary: var(--white-500);
+  --background-secondary: var(--primary-130);
+  --background-secondary-alt: var(--primary-160);
+  --background-tertiary: var(--primary-200);
+  --bg-backdrop: hsl(var(--black-500-hsl) / 0.54);
+  --bg-backdrop-no-opacity: var(--black-500);
+  --bg-base-primary: var(--white-500);
+  --bg-base-secondary: var(--primary-130);
+  --bg-base-tertiary: var(--primary-160);
+  --bg-brand: var(--brand-500);
+  --bg-mod-faint: hsl(var(--primary-400-hsl) / 0.08);
+  --bg-mod-strong: hsl(var(--primary-400-hsl) / 0.24);
+  --bg-mod-subtle: hsl(var(--primary-400-hsl) / 0.16);
+  --bg-surface-overlay: var(--white-500);
+  --bg-surface-overlay-tmp: var(--primary-130);
+  --bg-surface-raised: var(--white-500);
+  --black: var(--black-500);
+  --blur-fallback: hsl(var(--primary-530-hsl) / 0.96);
+  --blur-fallback-pressed: hsl(var(--primary-560-hsl) / 0.96);
+  --border-faint: hsl(var(--black-500-hsl) / 0.04);
+  --border-strong: hsl(var(--black-500-hsl) / 0.16);
+  --border-subtle: hsl(var(--black-500-hsl) / 0.08);
+  --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl) / 0.6);
+  --button-creator-revenue-background: var(--teal-430);
+  --button-danger-background: var(--red-430);
+  --button-danger-background-active: var(--red-530);
+  --button-danger-background-disabled: var(--red-430);
+  --button-danger-background-hover: var(--red-500);
+  --button-outline-brand-background: hsl(var(--white-500-hsl) / 0);
+  --button-outline-brand-background-active: var(--brand-560);
+  --button-outline-brand-background-hover: var(--brand-500);
+  --button-outline-brand-border: var(--brand-500);
+  --button-outline-brand-border-active: var(--brand-560);
+  --button-outline-brand-border-hover: var(--brand-500);
+  --button-outline-brand-text: var(--black-500);
+  --button-outline-brand-text-active: var(--white-500);
+  --button-outline-brand-text-hover: var(--white-500);
+  --button-outline-danger-background: hsl(var(--white-500-hsl) / 0);
+  --button-outline-danger-background-active: var(--red-460);
+  --button-outline-danger-background-hover: var(--red-430);
+  --button-outline-danger-border: var(--red-430);
+  --button-outline-danger-border-active: var(--red-430);
+  --button-outline-danger-border-hover: var(--red-430);
+  --button-outline-danger-text: var(--black-500);
+  --button-outline-danger-text-active: var(--white-500);
+  --button-outline-danger-text-hover: var(--white-500);
+  --button-outline-positive-background: hsl(var(--white-500-hsl) / 0);
+  --button-outline-positive-background-active: var(--green-530);
+  --button-outline-positive-background-hover: var(--green-430);
+  --button-outline-positive-border: var(--green-400);
+  --button-outline-positive-border-active: var(--green-530);
+  --button-outline-positive-border-hover: var(--green-430);
+  --button-outline-positive-text: var(--black-500);
+  --button-outline-positive-text-active: var(--white-500);
+  --button-outline-positive-text-hover: var(--white-500);
+  --button-outline-primary-background: hsl(var(--white-500-hsl) / 0);
+  --button-outline-primary-background-active: var(--primary-600);
+  --button-outline-primary-background-hover: var(--primary-530);
+  --button-outline-primary-border: var(--primary-530);
+  --button-outline-primary-border-active: var(--primary-600);
+  --button-outline-primary-border-hover: var(--primary-530);
+  --button-outline-primary-text: var(--black-500);
+  --button-outline-primary-text-active: var(--white-500);
+  --button-outline-primary-text-hover: var(--white-500);
+  --button-positive-background: var(--green-430);
+  --button-positive-background-active: var(--green-530);
+  --button-positive-background-disabled: var(--green-430);
+  --button-positive-background-hover: var(--green-530);
+  --button-secondary-background: var(--primary-430);
+  --button-secondary-background-active: var(--primary-530);
+  --button-secondary-background-disabled: var(--primary-430);
+  --button-secondary-background-hover: var(--primary-500);
+  --card-gradient-bg: hsl(var(--white-500-hsl) / 0.7);
+  --card-gradient-pressed-bg: hsl(var(--white-500-hsl) / 0.5);
+  --card-primary-bg: var(--white-500);
+  --card-primary-pressed-bg: var(--primary-160);
+  --card-secondary-bg: var(--white-500);
+  --card-secondary-pressed-bg: var(--primary-160);
+  --channel-icon: var(--primary-430);
+  --channel-text-area-placeholder: var(--primary-400);
+  --channels-default: var(--primary-460);
+  --channeltextarea-background: var(--primary-160);
+  --chat-background: var(--white-500);
+  --chat-banner-bg: var(--primary-130);
+  --chat-border: var(--primary-200);
+  --chat-input-container-background: var(--white-500);
+  --chat-swipe-to-reply-background: var(--primary-160);
+  --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
+  --coachmark-bg: var(--white-500);
+  --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.54);
+  --control-brand-foreground: var(--brand-500);
+  --control-brand-foreground-new: var(--brand-500);
+  --creator-revenue-icon-gradient-end: var(--teal-400);
+  --creator-revenue-icon-gradient-start: var(--teal-345);
+  --creator-revenue-info-box-background: hsl(var(--teal-430-hsl) / 0.1);
+  --creator-revenue-info-box-border: var(--teal-400);
+  --creator-revenue-locked-channel-icon: var(--teal-400);
+  --creator-revenue-progress-bar: var(--teal-345);
+  --deprecated-card-bg: var(--primary-100);
+  --deprecated-card-editable-bg: hsl(var(--primary-100-hsl) / 0.6);
+  --deprecated-quickswitcher-input-background: var(--white-500);
+  --deprecated-quickswitcher-input-placeholder: hsl(
+    var(--primary-500-hsl) / 0.3
+  );
+  --deprecated-store-bg: var(--primary-100);
+  --deprecated-text-input-bg: var(--primary-200);
+  --deprecated-text-input-border: hsl(var(--primary-500-hsl) / 0.3);
+  --deprecated-text-input-border-disabled: var(--primary-200);
+  --deprecated-text-input-border-hover: var(--primary-300);
+  --deprecated-text-input-prefix: var(--primary-300);
+  --display-banner-overflow-background: hsl(var(--white-200-hsl) / 0.5);
+  --divider-strong: hsl(var(--black-500-hsl) / 0.16);
+  --divider-subtle: hsl(var(--black-500-hsl) / 0.08);
+  --embed-background: var(--primary-130);
+  --embed-background-alternate: var(--primary-200);
+  --embed-title: var(--primary-860);
+  --expression-picker-bg: var(--primary-130);
+  --focus-primary: var(--blue-360);
+  --forum-post-extra-media-count-container-background: hsl(
+    var(--primary-160-hsl) / 0.8
+  );
+  --forum-post-tag-background: hsl(var(--primary-160-hsl) / 0.9);
+  --guild-icon-inactive-bg: var(--primary-130);
+  --guild-icon-inactive-nested-bg: var(--white-500);
+  --guild-notifications-bottom-sheet-pill-background: var(--white-500);
+  --halo-positive: hsl(var(--green-360-hsl) / 0.24);
+  --header-muted: var(--primary-460);
+  --header-primary: var(--primary-860);
+  --header-secondary: var(--primary-500);
+  --home-background: var(--primary-100);
+  --home-card-resting-border: hsl(var(--primary-400-hsl) / 0.24);
+  --icon-muted: var(--primary-400);
+  --icon-primary: var(--primary-860);
+  --icon-secondary: var(--primary-500);
+  --icon-transparent: hsl(var(--transparent-hsl) / 0);
+  --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
+  --info-danger-background: hsl(var(--red-430-hsl) / 0.1);
+  --info-danger-foreground: var(--red-430);
+  --info-danger-text: var(--black-500);
+  --info-help-background: hsl(var(--blue-430-hsl) / 0.1);
+  --info-help-foreground: var(--blue-430);
+  --info-help-text: var(--black-500);
+  --info-positive-background: hsl(var(--green-400-hsl) / 0.05);
+  --info-positive-foreground: var(--green-400);
+  --info-positive-text: var(--black-500);
+  --info-warning-background: hsl(var(--yellow-400-hsl) / 0.1);
+  --info-warning-foreground: var(--yellow-400);
+  --info-warning-text: var(--black-500);
+  --input-background: hsl(var(--black-500-hsl) / 0.08);
+  --input-focused-border: hsl(var(--black-500-hsl) / 0.16);
+  --input-placeholder-text: var(--primary-460);
+  --interactive-active: var(--primary-860);
+  --interactive-hover: var(--primary-600);
+  --interactive-muted: var(--primary-300);
+  --interactive-normal: var(--primary-500);
+  --legacy-android-blur-overlay-default: hsl(var(--primary-130-hsl) / 0.1);
+  --legacy-android-blur-overlay-ultra-thin: hsl(var(--white-500-hsl) / 0.25);
+  --legacy-blur-fallback-default: hsl(var(--primary-230-hsl) / 0.975);
+  --legacy-blur-fallback-ultra-thin: hsl(var(--white-500-hsl) / 0.95);
+  --live-stage-tile-border: hsl(var(--primary-430-hsl) / 0.15);
+  --logo-primary: var(--brand-500);
+  --mention-background: hsl(var(--brand-500-hsl) / 0.15);
+  --mention-foreground: var(--brand-500);
+  --modal-background: var(--white-500);
+  --modal-footer-background: var(--primary-130);
+  --navigator-header-tint: var(--primary-500);
+  --panel-bg: var(--white-500);
+  --polls-normal-fill-hover: var(--primary-230);
+  --polls-normal-image-background: var(--white-500);
+  --polls-victor-fill: hsl(var(--green-400-hsl) / 0.2);
+  --polls-voted-fill: hsl(var(--brand-500-hsl) / 0.2);
+  --profile-gradient-card-background: hsl(var(--white-500-hsl) / 0.7);
+  --profile-gradient-message-input-border: hsl(var(--primary-430-hsl) / 0.24);
+  --profile-gradient-note-background: hsl(var(--white-500-hsl) / 0.3);
+  --profile-gradient-overlay: hsl(var(--white-500-hsl) / 0.6);
+  --profile-gradient-overlay-synced-with-user-theme: hsl(
+    var(--white-500-hsl) / 0.8
+  );
+  --profile-gradient-profile-body-background-hover: hsl(
+    var(--black-500-hsl) / 0.08
+  );
+  --profile-gradient-role-pill-background: hsl(var(--white-500-hsl) / 0.5);
+  --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl) / 0.2);
+  --profile-gradient-section-box: hsl(var(--white-500-hsl) / 0.45);
+  --redesign-activity-card-background: var(--white-500);
+  --redesign-activity-card-background-pressed: var(--primary-160);
+  --redesign-activity-card-badge-icon: var(--primary-400);
+  --redesign-activity-card-border: hsl(var(--primary-400-hsl) / 0.24);
+  --redesign-activity-card-overflow-background: var(--primary-230);
+  --redesign-button-active-background: var(--green-430);
+  --redesign-button-active-pressed-background: var(--green-460);
+  --redesign-button-active-text: var(--white-500);
+  --redesign-button-danger-background: var(--red-430);
+  --redesign-button-danger-pressed-background: var(--red-460);
+  --redesign-button-danger-text: var(--white-500);
+  --redesign-button-destructive-background: var(--red-430);
+  --redesign-button-destructive-pressed-background: var(--red-460);
+  --redesign-button-destructive-text: var(--white-500);
+  --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl) / 0.54);
+  --redesign-button-overlay-alpha-pressed-background: hsl(
+    var(--black-500-hsl) / 0.64
+  );
+  --redesign-button-overlay-alpha-text: var(--white-500);
+  --redesign-button-overlay-background: var(--white-500);
+  --redesign-button-overlay-pressed-background: var(--primary-230);
+  --redesign-button-overlay-text: var(--primary-860);
+  --redesign-button-positive-background: var(--green-430);
+  --redesign-button-positive-pressed-background: var(--green-460);
+  --redesign-button-positive-text: var(--white-500);
+  --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl) / 0);
+  --redesign-button-primary-alt-border: var(--brand-500);
+  --redesign-button-primary-alt-on-blurple-background: hsl(
+    var(--brand-530-hsl) / 0
+  );
+  --redesign-button-primary-alt-on-blurple-border: var(--white-500);
+  --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
+  --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
+  --redesign-button-primary-alt-on-blurple-text: var(--white-500);
+  --redesign-button-primary-alt-pressed-background: hsl(
+    var(--brand-500-hsl) / 0.06
+  );
+  --redesign-button-primary-alt-pressed-border: var(--brand-330);
+  --redesign-button-primary-alt-pressed-text: var(--brand-560);
+  --redesign-button-primary-alt-text: var(--brand-500);
+  --redesign-button-primary-background: var(--brand-500);
+  --redesign-button-primary-on-blurple-pressed-text: var(--brand-530);
+  --redesign-button-primary-overlay-background: var(--white-500);
+  --redesign-button-primary-overlay-pressed-background: var(--primary-230);
+  --redesign-button-primary-overlay-text: var(--primary-860);
+  --redesign-button-primary-pressed-background: var(--brand-560);
+  --redesign-button-primary-text: var(--white-500);
+  --redesign-button-secondary-background: var(--white-500);
+  --redesign-button-secondary-border: hsl(var(--black-500-hsl) / 0.08);
+  --redesign-button-secondary-overlay-background: hsl(
+    var(--black-500-hsl) / 0.54
+  );
+  --redesign-button-secondary-overlay-pressed-background: hsl(
+    var(--black-500-hsl) / 0.64
+  );
+  --redesign-button-secondary-overlay-text: var(--white-500);
+  --redesign-button-secondary-pressed-background: var(--primary-130);
+  --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl) / 0.04);
+  --redesign-button-secondary-text: var(--primary-600);
+  --redesign-button-selected-background: hsl(var(--brand-500-hsl) / 0.16);
+  --redesign-button-selected-pressed-background: hsl(
+    var(--brand-500-hsl) / 0.24
+  );
+  --redesign-button-selected-text: var(--brand-500);
+  --redesign-button-tertiary-background: hsl(var(--black-500-hsl) / 0.08);
+  --redesign-button-tertiary-pressed-background: hsl(
+    var(--black-500-hsl) / 0.16
+  );
+  --redesign-button-tertiary-pressed-text: var(--primary-500);
+  --redesign-button-tertiary-text: var(--primary-600);
+  --redesign-channel-category-name-text: var(--primary-500);
+  --redesign-channel-message-preview-text: var(--primary-460);
+  --redesign-channel-name-muted-text: var(--primary-460);
+  --redesign-channel-name-text: var(--primary-860);
+  --redesign-chat-input-background: hsl(var(--black-500-hsl) / 0.08);
+  --redesign-image-button-pressed-background: hsl(var(--black-500-hsl) / 0.08);
+  --redesign-input-control-active-bg: var(--white-500);
+  --redesign-input-control-selected: var(--brand-500);
+  --redesign-only-background-active: var(--primary-430);
+  --redesign-only-background-default: var(--white-500);
+  --redesign-only-background-overlay: var(--primary-160);
+  --redesign-only-background-raised: var(--primary-130);
+  --redesign-only-background-sunken: var(--primary-200);
+  --scrollbar-auto-scrollbar-color-thumb: var(--primary-230);
+  --scrollbar-auto-scrollbar-color-track: var(--primary-130);
+  --scrollbar-auto-thumb: var(--primary-300);
+  --scrollbar-auto-track: var(--primary-160);
+  --scrollbar-thin-thumb: hsl(var(--primary-500-hsl) / 0.3);
+  --scrollbar-thin-track: hsl(var(--black-500-hsl) / 0);
+  --spoiler-hidden-background: var(--primary-200);
+  --spoiler-revealed-background: var(--primary-160);
+  --status-danger: var(--red-430);
+  --status-danger-background: var(--red-430);
+  --status-danger-text: var(--white-500);
+  --status-dnd: var(--red-430);
+  --status-idle: var(--yellow-400);
+  --status-offline: var(--primary-460);
+  --status-online: var(--green-400);
+  --status-positive: var(--green-400);
+  --status-positive-background: var(--green-430);
+  --status-positive-text: var(--white-500);
+  --status-speaking: var(--green-360);
+  --status-warning: var(--yellow-400);
+  --status-warning-background: var(--yellow-400);
+  --status-warning-text: var(--white-500);
+  --text-brand: var(--brand-500);
+  --text-danger: var(--red-500);
+  --text-link: var(--blue-430);
+  --text-link-low-saturation: var(--blue-430);
+  --text-low-contrast: var(--primary-460);
+  --text-message-preview-low-sat: var(--primary-460);
+  --text-muted: var(--primary-460);
+  --text-muted-on-default: var(--primary-430);
+  --text-normal: var(--primary-600);
+  --text-positive: var(--green-430);
+  --text-primary: var(--primary-600);
+  --text-secondary: var(--primary-500);
+  --text-warning: var(--yellow-430);
+  --textbox-markdown-syntax: var(--primary-530);
+  --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+  --toast-bg: var(--white-500);
+  --typing-indicator-bg: var(--primary-130);
+  --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
+  --voice-video-video-tile-background: hsl(var(--plum-17-hsl) / 0.4);
+  --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl) / 0.48);
+  --white: var(--white-500);
+  --you-bar-bg: var(--white-500);
+}
+
+.theme-light.custom-theme-background {
+  --bg-overlay-color: 255 255 255;
+  --bg-overlay-color-inverse: 0 0 0;
+  --bg-overlay-opacity-1: 0.9;
+  --bg-overlay-opacity-2: 0.8;
+  --bg-overlay-opacity-3: 0.7;
+  --bg-overlay-opacity-4: 0.6;
+  --bg-overlay-opacity-5: 0.3;
+  --bg-overlay-opacity-6: 0.15;
+  --bg-overlay-opacity-hover: 0.7;
+  --bg-overlay-opacity-hover-inverse: 0.02;
+  --bg-overlay-opacity-active: 0.65;
+  --bg-overlay-opacity-active-inverse: 0.03;
+  --bg-overlay-opacity-selected: 0.6;
+  --bg-overlay-opacity-selected-inverse: 0.04;
+  --bg-overlay-opacity-chat: 0.9;
+  --bg-overlay-opacity-home: 0.7;
+  --bg-overlay-opacity-home-card: 0.9;
+  --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5);
+}
+
+/* body,
+.appMount_c99875 {
+  background: linear-gradient(
+    261deg,
+    #dab9ff 13.66%,
+    #ffb9f0 42.55%,
+    #ffbcd0 85.7%
+  );
+} */
+
+/* left navigation */
+.wrapper__216eb[aria-label="Servers sidebar"] {
+  background: linear-gradient(
+    261deg,
+    #dab9ff 13.66%,
+    #ffb9f0 42.55%,
+    #ffbcd0 85.7%
+  );
+
+  /* group */
+  .expandedFolderBackground_b1385f {
+    opacity: 0.6;
+  }
+
+  /* button bellow */
+  .mention_dd733a {
+    background-color: var(--status-danger);
+    opacity: 0.9;
+  }
 }

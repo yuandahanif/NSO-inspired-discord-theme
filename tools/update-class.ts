@@ -1,7 +1,7 @@
 const config = {
   diffFile: "./submodules/Update-Classes/Changes.txt",
   themeDir: "./themes/index.css",
-  outputDir: "./output/index.css",
+  outputDir: "./output/ame-chan.theme.css",
 };
 
 async function main() {
