@@ -8,34 +8,32 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
-/* .pixelify-sans-font {
-  font-family: var(--ame-font-family);
-  font-optical-sizing: var(--ame-font-optical-sizing);
-  font-weight: var(--ame-font-weight);
-  font-style: var(--ame-font-style);
-} */
 
 :root {
   /* top left corner text */
   --corner-text: "OMGkawaiiAngel";
 
   --ame-white: #ffffff;
-  --ame-border: 1px solid #161617;
+  --ame-border-color: #161617;
+  --ame-border: thin solid var(--ame-border-color);
   --ame-main-pink: #ff7ace;
   --ame-font-family: "Pixelify Sans", sans-serif;
   --ame-font-optical-sizing: auto;
-  --ame-font-weight: 400;
+  --ame-font-weight: 600;
   --ame-font-style: normal;
 
-  /* overide */
+  /* override */
   --divider-color: var(--ame-main-pink);
 }
-/* font overide */
-.defaultColor__30336.heading-md-semibold__76ba1.defaultColor__8610e.title__84e16 {
+
+/* pixelated font override */
+.defaultColor__30336.heading-md-semibold__76ba1.defaultColor__8610e.title__84e16,
+.lineClamp1__6f680.text-md-semibold__8664f.name_e8e549 {
   font-family: var(--ame-font-family);
   font-optical-sizing: var(--ame-font-optical-sizing);
   font-weight: var(--ame-font-weight);
   font-style: var(--ame-font-style);
+  color: rgb(77, 35, 207);
 }
 
 .container_d1f8f5 {
@@ -103,6 +101,12 @@
     background: transparent;
   }
 
+  /* server header */
+  .header__77c95 {
+    border-bottom: var(--ame-border);
+    box-shadow: none;
+  }
+
   /* profile ================================ */
   .panels__58331 {
     background-color: transparent;
@@ -131,8 +135,14 @@
 }
 
 /* main chat ================================ */
+.content__01e65:before {
+  border-bottom: var(--ame-border);
+  box-shadow: none;
+}
 .chatContent_f087cb {
   background: transparent;
+  border-right: var(--ame-border);
+  box-shadow: none;
 }
 .theme-light .form_d8a4a1:before,
 .form_d8a4a1:before {
@@ -151,6 +161,10 @@
   stroke: var(--ame-main-pink) !important;
   color: var(--ame-main-pink) !important;
   fill: var(--ame-main-pink) !important;
+}
+.content__7191e {
+  color: var(--ame-white);
+  background: var(--ame-main-pink);
 }
 
 /* sidebar right ================================ */
