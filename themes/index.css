@@ -13,7 +13,8 @@
   /* top left corner text */
   --corner-text: "OMGkawaiiAngel";
 
-  --ame-white: #ffffff;
+  --ame-white: hsl(290, 60%, 98%);
+  --ame-blue: hsl(255, 71%, 47%);
   --ame-border-color: #161617;
   --ame-border: thin solid var(--ame-border-color);
   --ame-main-pink: #ff7ace;
@@ -33,7 +34,7 @@
   font-optical-sizing: var(--ame-font-optical-sizing);
   font-weight: var(--ame-font-weight);
   font-style: var(--ame-font-style);
-  color: rgb(77, 35, 207);
+  color: var(--ame-blue);
 }
 
 .container_d1f8f5 {
@@ -139,7 +140,18 @@
 }
 .theme-light .children_cde9af:after,
 .children_cde9af:after {
-  background: white;
+  background: transparent;
+  border-right: var(--ame-border);
+}
+.icon_ae0b42 {
+  color: var(--ame-blue);
+}
+
+/* toolbar right */
+.toolbar__62fb5 {
+  .iconWrapper_de6cd1.clickable_ce0925 .icon_ae0b42 {
+    color: var(--ame-white);
+  }
 }
 
 /* main chat ================================ */
@@ -185,9 +197,20 @@
 
 /* ============================================================= */
 /* user popout */
+.theme-light.layer__6b5c3 {
+  right: calc(248px - 6px) !important;
+}
+.userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
+  /* background-color: var(--ame-white); */
+  background: linear-gradient(
+    261deg,
+    #dab9ff 13.66%,
+    #ffb9f0 42.55%,
+    #ffbcd0 85.7%
+  );
+}
 .userPopoutInner_e90432.userProfileInner__61cc1.userProfileInnerThemedNonPremium_ed9022 {
-  /* background-color: var(--profile-gradient-primary-color); */
-  background: var(--ame-white), url("./assets/window-top.png"); /** TODO: try using image as bg */
+  background: transparent;
 }
 
 .userProfileInnerThemedNonPremium_ed9022 {
@@ -199,10 +222,8 @@
   background: transparent;
 }
 .userProfileInner__61cc1:before {
-  background-color: var(--ame-white);
+  background: transparent;
 }
-
-.overlayBackground__2666e {
-  /* background-color: var(--profile-body-background-color); */
-  background-color: var(--ame-white);
+.userPopoutOverlayBackground_bf6444.overlayBackground__2666e {
+  background: transparent;
 }

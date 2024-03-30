@@ -2,7 +2,7 @@
 
 ## <div align="center">!!!This is ongoing project!!!</div>
 
-A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://store.steampowered.com/app/1451940/NEEDY_STREAMER_OVERLOAD) (also known as NEEDY GIRL OVERDOSE). Please note that this theme is not affiliated with the game or its developers. This theme is based on the game's art style and the [OMGkawaiiAngel](https://angelkawaii.com/) website. Lastly don't over do it, this theme is meant to be fun, simple, and user friendly (**don't change too much font or add too much animations, it will be hard to read and use**).
+A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://store.steampowered.com/app/1451940/NEEDY_STREAMER_OVERLOAD) (also known as NEEDY GIRL OVERDOSE). This theme is based on the game's art style and the [OMGkawaiiAngel](https://angelkawaii.com/) website.
 
 ## Todo/Idea list
 
@@ -28,4 +28,4 @@ There is no installation guide yet, but you can use [Vencord](https://vencord.de
 
 ## Contributing
 
-I need help with [Todo/Idea list](#todoidea-list), but any contributions or suggestions are welcome. Feel free to contribute to this project by forking this repository, making your changes, and submitting a pull request.
+I need help with [Todo/Idea list](#todoidea-list), but any contributions or suggestions are welcome. Feel free to contribute to this project by forking this repository, making your changes, and submitting a pull request. Lastly please don't over do it, this theme is meant to be fun, simple, and user friendly (**don't change too much font or add too much animations, it will be hard to read and use**).
