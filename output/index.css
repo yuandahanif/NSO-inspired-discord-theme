@@ -1,0 +1,19 @@
+.coverImage__12e65 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 14px;
+  font-family: "Whitney", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
