@@ -411,26 +411,20 @@
   --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-5);
 }
 
-/* body,
-.appMount_c99875 {
+.container_d1f8f5 {
   background: linear-gradient(
     261deg,
     #dab9ff 13.66%,
     #ffb9f0 42.55%,
     #ffbcd0 85.7%
   );
-} */
+}
 
 /* left navigation */
-.wrapper__216eb[aria-label="Servers sidebar"] {
-  background: linear-gradient(
-    261deg,
-    #dab9ff 13.66%,
-    #ffb9f0 42.55%,
-    #ffbcd0 85.7%
-  );
+.wrapper__216eb {
+  background: transparent;
 
-  /* group */
+  /* folder */
   .expandedFolderBackground_b1385f {
     opacity: 0.6;
   }
@@ -440,4 +434,69 @@
     background-color: var(--status-danger);
     opacity: 0.9;
   }
+}
+
+/* sidebar left */
+.sidebar_e031be {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 240px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  /* background: linear-gradient(
+    261deg,
+    #dab9ff 13.66%,
+    #ffb9f0 42.55%,
+    #ffbcd0 85.7%
+  ); */
+  background: transparent;
+}
+
+.theme-light .container__7e23c {
+  /* background: var(--bg-overlay-2, var(--background-secondary)); */
+  background: transparent;
+}
+
+.panels__58331 {
+  /* background-color: var(--background-secondary-alt); */
+  background-color: transparent;
+
+  .container_debb33 {
+    background-color: transparent;
+    /* background: var(--bg-overlay-3, var(--background-secondary-alt)); */
+    /* border-top: white 1px solid; */
+  }
+}
+
+/* chat */
+.chat__52833 {
+  background: transparent;
+}
+
+/* top chat */
+.theme-light .themed_b152d4,
+.themed_b152d4 {
+  background: transparent;
+}
+.theme-light .children_cde9af:after,
+.children_cde9af:after {
+  background: white;
+}
+
+/* main chat */
+.chatContent_f087cb {
+  background: transparent;
+}
+.theme-light .form_d8a4a1:before,
+.form_d8a4a1:before {
+  background: transparent;
+}
+
+/* sidebar right */
+.container_f79ab4 {
+  background: transparent;
+}
+.members__573eb {
+  background: transparent;
 }
