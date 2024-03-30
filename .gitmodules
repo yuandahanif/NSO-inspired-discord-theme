@@ -1,0 +1,3 @@
+[submodule "submodules/Update-Classes"]
+	path = submodules/Update-Classes
+	url = https://github.com/SyndiShanX/Update-Classes
