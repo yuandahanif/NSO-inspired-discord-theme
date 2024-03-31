@@ -14,7 +14,8 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 
 ## Preview
 
-![Preview](./preview/dc-preview-main.png)
+![Preview Server](./preview/dc-preview-main.png)
+![Preview DM](./preview/dc-preview-dm.png)
 
 ## Installation
 
