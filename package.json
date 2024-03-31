@@ -7,5 +7,10 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuandahanif/NSO-inspired-discord-theme"
   }
 }

@@ -13,7 +13,7 @@
   /* top left corner text */
   --corner-text: "OMGkawaiiAngel";
 
-  --ame-white: 290, 60%, 98%;
+  --ame-white: 300, 100%, 99%;
   --ame-blue: hsl(255, 71%, 47%);
   --ame-border-color: #161617;
   --ame-border: thin solid var(--ame-border-color);
@@ -29,7 +29,8 @@
 
 /* pixelated font override */
 .defaultColor__30336.heading-md-semibold__76ba1.defaultColor__8610e.title__84e16,
-.lineClamp1__6f680.text-md-semibold__8664f.name_e8e549 {
+.lineClamp1__6f680.text-md-semibold__8664f.name_e8e549,
+.profilePanel_e2cafe::before {
   font-family: var(--ame-font-family);
   font-optical-sizing: var(--ame-font-optical-sizing);
   font-weight: var(--ame-font-weight);
@@ -131,6 +132,53 @@
 .privateChannels__9b518,
 .theme-light .scroller__89969 {
   background: transparent;
+}
+/* DM profile panel */
+.profilePanel_e2cafe {
+  padding-top: 42px;
+  padding-bottom: 25px;
+}
+.profilePanel_e2cafe::before,
+.profilePanel_e2cafe::after {
+  box-sizing: border-box;
+  padding: 11px 0 0 30px;
+  content: "Pro f il e";
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/window-top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  overflow: hidden;
+  max-height: 42px;
+  z-index: 2;
+}
+.profilePanel_e2cafe::after {
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/window-bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0;
+  content: "";
+  top: 100%;
+  left: 0;
+  transform: translateY(-100%);
+  height: 25px;
+}
+
+.none_ff9f86.scrollerBase__65223 {
+  background: var(--ame-white);
+}
+.userPanelInnerThemed_c2aed9 {
+  background: transparent;
+}
+/* Overiding User custom color !shuldnt do this */
+.userProfileOuterThemed__1fbd7 {
+  /* background: transparent !important; */
+}
+.userProfileOuterUnthemed_e14365 {
+  background: hsl(var(--ame-white)) !important;
 }
 
 /* header chat ================================ */
