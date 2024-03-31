@@ -13,7 +13,7 @@
   /* top left corner text */
   --corner-text: "OMGkawaiiAngel";
 
-  --ame-white: hsl(290, 60%, 98%);
+  --ame-white: 290, 60%, 98%;
   --ame-blue: hsl(255, 71%, 47%);
   --ame-border-color: #161617;
   --ame-border: thin solid var(--ame-border-color);
@@ -150,7 +150,7 @@
 /* toolbar right */
 .toolbar__62fb5 {
   .iconWrapper_de6cd1.clickable_ce0925 .icon_ae0b42 {
-    color: var(--ame-white);
+    color: hsl(var(--ame-white));
   }
 }
 
@@ -169,6 +169,14 @@
   background: transparent;
 }
 
+/* mention message */
+.message_ccca67.cozyMessage__9f4fd.mentioned_fa6fd2.groupStart__7b93c.wrapper_a62503.cozy_f5c119.zalgo__39311 {
+  background: hsla(var(--ame-white), 0.5);
+}
+.mentioned_fa6fd2:before {
+  background: var(--ame-main-pink);
+}
+
 /* new message devider ================================ */
 .divider__855e3 {
   border-top-color: var(--ame-main-pink) !important;
@@ -183,7 +191,7 @@
   fill: var(--ame-main-pink) !important;
 }
 .content__7191e {
-  color: var(--ame-white);
+  color: hsl(var(--ame-white));
   background: var(--ame-main-pink);
 }
 
@@ -198,27 +206,44 @@
 /* ============================================================= */
 /* user popout */
 .theme-light.layer__6b5c3 {
-  right: calc(248px - 6px) !important;
+  right: calc(248px - 8px) !important;
 }
 .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
-  /* background-color: var(--ame-white); */
   background: linear-gradient(
     261deg,
     #dab9ff 13.66%,
     #ffb9f0 42.55%,
     #ffbcd0 85.7%
   );
+  border-radius: 0;
+  border: var(--ame-border);
 }
 .userPopoutInner_e90432.userProfileInner__61cc1.userProfileInnerThemedNonPremium_ed9022 {
   background: transparent;
 }
 
+/* user banner */
+.userProfileInner__61cc1 {
+  border-radius: 0;
+}
+.bannerSVGWrapper__8a38c {
+  mask {
+    background: transparent;
+    border-bottom: var(--ame-border);
+    stroke: #78efff;
+  }
+
+  rect {
+    fill: #78efff;
+  }
+
+  .banner__6d414.popoutBannerPremium__84487.bannerPremium__69560.roundedBanner__16aa6 {
+    border-bottom: thin solid yellow;
+    box-sizing: content-box;
+  }
+}
+
 .userProfileInnerThemedNonPremium_ed9022 {
-  /* background: linear-gradient(
-    var(--profile-gradient-primary-color),
-    var(--profile-gradient-primary-color) 60px,
-    var(--profile-gradient-secondary-color)
-  ); */
   background: transparent;
 }
 .userProfileInner__61cc1:before {

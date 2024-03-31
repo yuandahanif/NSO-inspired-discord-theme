@@ -10,6 +10,7 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 - [ ] Add a custom background
 - [ ] Add custom icons
 - [ ] Add JINE frame border to user popout
+- [ ] Minify output CSS
 
 ## Preview
 
