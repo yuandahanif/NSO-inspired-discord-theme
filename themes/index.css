@@ -129,13 +129,160 @@
   }
 }
 
-/* DM ================================ */
+/* header chat ================================ */
+.theme-light .themed_b152d4,
+.themed_b152d4 {
+  background: transparent;
+}
+.theme-light .children_cde9af:after,
+.children_cde9af:after {
+  background: transparent;
+  border-right: var(--ame-border);
+}
+.icon_ae0b42 {
+  color: var(--ame-blue);
+}
+
+/* toolbar right */
+.toolbar__62fb5 {
+  .iconWrapper_de6cd1.clickable_ce0925 .icon_ae0b42 {
+    color: hsl(var(--ame-white));
+  }
+}
+
+/* main chat ================================ */
+.content__01e65:before {
+  border-bottom: var(--ame-border);
+  box-shadow: none;
+}
+.chatContent_f087cb {
+  background: transparent;
+  border-right: var(--ame-border);
+  box-shadow: none;
+}
+.theme-light .form_d8a4a1:before,
+.form_d8a4a1:before {
+  background: transparent;
+}
+
+/* mention message */
+.message_ccca67.cozyMessage__9f4fd.mentioned_fa6fd2.groupStart__7b93c.wrapper_a62503.cozy_f5c119.zalgo__39311 {
+  background: hsla(var(--ame-white), 0.5);
+}
+.mentioned_fa6fd2:before {
+  background: var(--ame-main-pink);
+}
+
+/* new message devider ================================ */
+.divider__855e3 {
+  border-top-color: var(--ame-main-pink) !important;
+}
+.unreadPill__1b4fa {
+  background-color: var(--ame-main-pink) !important;
+}
+.unreadPillCap__44e20.unreadPillCapStroke__89d64,
+.unreadPillCapStroke__89d64 {
+  stroke: var(--ame-main-pink) !important;
+  color: var(--ame-main-pink) !important;
+  fill: var(--ame-main-pink) !important;
+}
+.content__7191e {
+  color: hsl(var(--ame-white));
+  background: var(--ame-main-pink);
+}
+
+/* sidebar right ================================ */
+.container_f79ab4 {
+  background: transparent;
+}
+.members__573eb {
+  background: transparent;
+  width: 240px; /* keep the scrollbar */
+  padding: 0;
+}
+
+/* group title */
+.membersGroup_cad095.container__43554 {
+  border-bottom: var(--ame-border);
+  padding: 7px 0px 7px 7px;
+  height: auto;
+}
+/* member list */
+.member_aa4760.member_b44d5d.container_a48b21 {
+  background: hsla(var(--ame-white), 0.3);
+  border-bottom: var(--ame-border);
+  max-width: 240px;
+  border-radius: 0;
+  margin-left: 0;
+}
+.member_aa4760.member_b44d5d.container_a48b21.selected__7f4cb {
+  background: hsla(var(--ame-white), 0.5);
+}
+
+/* ============================================================= */
+/* user popout */
+/* from user list on right panel */
+.layer__6b5c3[id="popout_7299"] {
+  right: calc(248px - 8px) !important;
+}
+
+/* from profile on bottom left */
+.layer__6b5c3[id="popout_58"] {
+  left: 100px !important;
+}
+
+.userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
+  background: linear-gradient(
+    261deg,
+    #dab9ff 13.66%,
+    #ffb9f0 42.55%,
+    #ffbcd0 85.7%
+  );
+  border-radius: 0;
+  border: var(--ame-border);
+}
+.userPopoutInner_e90432.userProfileInner__61cc1.userProfileInnerThemedNonPremium_ed9022 {
+  background: transparent;
+}
+
+/* user banner */
+.userProfileInner__61cc1 {
+  border-radius: 0;
+}
+.bannerSVGWrapper__8a38c {
+  mask {
+    background: transparent;
+    border-bottom: var(--ame-border);
+    stroke: #78efff;
+  }
+
+  rect {
+    fill: #78efff;
+  }
+
+  .banner__6d414.popoutBannerPremium__84487.bannerPremium__69560.roundedBanner__16aa6 {
+    border-bottom: thin solid yellow;
+    box-sizing: content-box;
+  }
+}
+
+.userProfileInnerThemedNonPremium_ed9022 {
+  background: transparent;
+}
+.userProfileInner__61cc1:before {
+  background: transparent;
+}
+.userPopoutOverlayBackground_bf6444.overlayBackground__2666e {
+  background: transparent;
+}
+
+/* DM screeen ================================================================================================================================================================ */
 .privateChannels__9b518,
 .theme-light .scroller__89969 {
   background: transparent;
 }
 
-/* DM profile panel */
+/* DM right profile panel */
 .profilePanel_e2cafe {
   padding-top: 35px;
   padding-bottom: 25px;
@@ -223,139 +370,30 @@
   background: hsl(var(--ame-white)) !important;
 }
 
-/* header chat ================================ */
-.theme-light .themed_b152d4,
-.themed_b152d4 {
-  background: transparent;
-}
-.theme-light .children_cde9af:after,
-.children_cde9af:after {
-  background: transparent;
-  border-right: var(--ame-border);
-}
-.icon_ae0b42 {
-  color: var(--ame-blue);
+/* Friend ==================================================== */
+.peopleColumn__0c784 {
+  background: hsl(var(--ame-white));
 }
 
-/* toolbar right */
-.toolbar__62fb5 {
-  .iconWrapper_de6cd1.clickable_ce0925 .icon_ae0b42 {
-    color: hsl(var(--ame-white));
-  }
+/* Actibe now right panel */
+.nowPlayingColumn_b025fe {
+  display: flex;
+  flex-direction: column;
+  background: hsl(var(--ame-white));
+  /* overflow-y: auto; */
 }
-
-/* main chat ================================ */
-.content__01e65:before {
-  border-bottom: var(--ame-border);
-  box-shadow: none;
+.nowPlayingColumn_b025fe::-webkit-scrollbar {
+  display: none;
 }
-.chatContent_f087cb {
+.nowPlayingColumn_b025fe::after {
+  content: "";
+  margin-top: auto;
+  display: block;
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/preview/KAngel-peace-shine.webp");
+  height: 227px;
+  width: 348px;
+}
+.container__3673d {
   background: transparent;
-  border-right: var(--ame-border);
-  box-shadow: none;
-}
-.theme-light .form_d8a4a1:before,
-.form_d8a4a1:before {
-  background: transparent;
-}
-
-/* mention message */
-.message_ccca67.cozyMessage__9f4fd.mentioned_fa6fd2.groupStart__7b93c.wrapper_a62503.cozy_f5c119.zalgo__39311 {
-  background: hsla(var(--ame-white), 0.5);
-}
-.mentioned_fa6fd2:before {
-  background: var(--ame-main-pink);
-}
-
-/* new message devider ================================ */
-.divider__855e3 {
-  border-top-color: var(--ame-main-pink) !important;
-}
-.unreadPill__1b4fa {
-  background-color: var(--ame-main-pink) !important;
-}
-.unreadPillCap__44e20.unreadPillCapStroke__89d64,
-.unreadPillCapStroke__89d64 {
-  stroke: var(--ame-main-pink) !important;
-  color: var(--ame-main-pink) !important;
-  fill: var(--ame-main-pink) !important;
-}
-.content__7191e {
-  color: hsl(var(--ame-white));
-  background: var(--ame-main-pink);
-}
-
-/* sidebar right ================================ */
-.container_f79ab4 {
-  background: transparent;
-}
-.members__573eb {
-  background: transparent;
-  width: 240px; /* keep the scrollbar */
-  padding: 0;
-}
-
-/* group title */
-.membersGroup_cad095.container__43554 {
-  border-bottom: var(--ame-border);
-  padding: 7px 0px 7px 7px;
   height: auto;
-}
-/* member list */
-.member_aa4760.member_b44d5d.container_a48b21.clickable__03a29 {
-  background: hsla(var(--ame-white), 0.3);
-  border-bottom: var(--ame-border);
-  max-width: 240px;
-  border-radius: 0;
-  margin-left: 0;
-}
-
-/* ============================================================= */
-/* user popout */
-.theme-light.layer__6b5c3 {
-  right: calc(248px - 8px) !important;
-}
-.userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
-  background: linear-gradient(
-    261deg,
-    #dab9ff 13.66%,
-    #ffb9f0 42.55%,
-    #ffbcd0 85.7%
-  );
-  border-radius: 0;
-  border: var(--ame-border);
-}
-.userPopoutInner_e90432.userProfileInner__61cc1.userProfileInnerThemedNonPremium_ed9022 {
-  background: transparent;
-}
-
-/* user banner */
-.userProfileInner__61cc1 {
-  border-radius: 0;
-}
-.bannerSVGWrapper__8a38c {
-  mask {
-    background: transparent;
-    border-bottom: var(--ame-border);
-    stroke: #78efff;
-  }
-
-  rect {
-    fill: #78efff;
-  }
-
-  .banner__6d414.popoutBannerPremium__84487.bannerPremium__69560.roundedBanner__16aa6 {
-    border-bottom: thin solid yellow;
-    box-sizing: content-box;
-  }
-}
-
-.userProfileInnerThemedNonPremium_ed9022 {
-  background: transparent;
-}
-.userProfileInner__61cc1:before {
-  background: transparent;
-}
-.userPopoutOverlayBackground_bf6444.overlayBackground__2666e {
-  background: transparent;
 }

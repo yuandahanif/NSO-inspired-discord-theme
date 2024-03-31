@@ -16,6 +16,10 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 - [ ] Add JINE frame border to user popout
 - [ ] Minify output CSS
 
+## Issues
+
+- [ ] Class-updater don't cover `id` case eg `[id="popout_7299"]`, but idk if the `id` change on update.
+
 ## Preview
 
 ![Preview Server](./preview/dc-preview-main.png)
