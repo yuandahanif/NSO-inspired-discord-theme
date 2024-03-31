@@ -1,5 +1,9 @@
 # Needy-streamer-overload-inspired-discord-theme
 
+<div align="center">
+<img src="./preview/KAngel-peace-shine.webp" alt="KAngel-peace"/>
+</div>
+
 ## <div align="center">!!!This is ongoing project!!!</div>
 
 A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://store.steampowered.com/app/1451940/NEEDY_STREAMER_OVERLOAD) (also known as NEEDY GIRL OVERDOSE). This theme is based on the game's art style and the [OMGkawaiiAngel](https://angelkawaii.com/) website.
