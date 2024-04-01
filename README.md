@@ -18,12 +18,14 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 
 ## Preview (some parts are outdated)
 
-![Preview Server](./preview/dc-preview-main.png)
+| ![Preview Server](./preview/dc-preview-main.png)<br>server and user list |
+|:---:|
 
-| ![Preview DM](./preview/dc-preview-dm.png) add frame border to DM profile | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png) override animation for non Nitro user (I think this is questionable to remove discord user customization) |
-|-------------------------------------------------|---------------------------------------------------------------------|
+| ![Preview DM](./preview/dc-preview-dm.png)<br>add frame border to DM profile | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png)<br>override animation for non Nitro user (I think this is questionable to remove discord user customization) |
+|:---:|---|
 
-![Preview Stream chat](./preview/dc-preview-stream.png)
+| ![Preview Stream chat](./preview/dc-preview-stream.png)<br>stream chat |
+|:---:|
 
 ## Installation
 
