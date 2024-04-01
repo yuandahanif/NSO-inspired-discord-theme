@@ -373,27 +373,22 @@
   background: hsl(var(--ame-white));
 }
 
+.upperContainer__57565:has(.tabBar__73938.topPill__63ad4[aria-label="Friends"])
+  svg {
+  color: hsl(var(--ame-border-color));
+}
+
 /* Actibe now right panel */
 .nowPlayingColumn_b025fe {
   display: flex;
   flex-direction: column;
-  background: hsl(var(--ame-white));
-  /* overflow-y: auto; */
-}
-.nowPlayingColumn_b025fe::-webkit-scrollbar {
-  display: none;
-}
-.nowPlayingColumn_b025fe::after {
-  content: "";
-  margin-top: auto;
-  display: block;
-  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/preview/KAngel-peace-shine.webp");
-  height: 227px;
-  width: 348px;
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/preview/KAngel-peace-shine.webp"),
+    hsl(var(--ame-white));
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .container__3673d {
   background: transparent;
-  height: auto;
 }
 
 /* Streaming ================================================================================================================================================================ */
