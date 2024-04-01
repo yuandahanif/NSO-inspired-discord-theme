@@ -23,6 +23,8 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 | ![Preview DM](./preview/dc-preview-dm.png) add frame border to DM profile | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png) override animation for non Nitro user (I think this is questionable to remove discord user customization) |
 |-------------------------------------------------|---------------------------------------------------------------------|
 
+![Preview Stream chat](./preview/dc-preview-stream.png)
+
 ## Installation
 
 There is no installation guide yet, but you can use [Vencord](https://vencord.dev/) to test this theme. Just copy the code from `themes/index.css` and paste it into the custom CSS box.
