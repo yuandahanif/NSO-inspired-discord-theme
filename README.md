@@ -18,6 +18,8 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 
 ## Preview (some parts are outdated)
 
+The blur part is not part of the theme, it's just for privacy.
+
 | ![Preview Server](./preview/dc-preview-main.png)<br>server and user list |
 |:---:|
 
