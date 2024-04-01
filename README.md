@@ -16,15 +16,11 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 - [ ] Add JINE frame border to user popout
 - [ ] Minify output CSS
 
-## Issues
-
-- [ ] Class-updater don't cover `id` case eg `[id="popout_7299"]`, but idk if the `id` change on update.
-
 ## Preview (some parts are outdated)
 
 ![Preview Server](./preview/dc-preview-main.png)
 
-| ![Preview DM](./preview/dc-preview-dm.png) | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png) |
+| ![Preview DM](./preview/dc-preview-dm.png) add frame border to DM profile | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png) override animation for non Nitro user (I think this is questionable to remove discord user customization) |
 |-------------------------------------------------|---------------------------------------------------------------------|
 
 ## Installation

@@ -221,13 +221,14 @@
 
 /* user popout =============================================================  */
 /* from user list on right panel */
-.layer__6b5c3[id="popout_7299"] {
+.layer__6b5c3 {
   right: calc(248px - 8px) !important;
 }
 
 /* from profile on bottom left */
-.layer__6b5c3[id="popout_58"] {
+.layer__6b5c3[style*="left"] {
   left: 100px !important;
+  right: unset !important;
 }
 
 .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
