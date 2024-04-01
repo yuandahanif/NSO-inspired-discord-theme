@@ -268,16 +268,19 @@
 /* DM right profile panel */
 .profilePanel_e2cafe {
   padding-top: 35px;
-  padding-bottom: 25px;
+  padding-bottom: 14px;
 }
 .profilePanel_e2cafe::before,
 .profilePanel_e2cafe::after {
   box-sizing: border-box;
   padding: 11px 0 0 30px;
   content: "Pro f il e";
-  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/window-top.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-r.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-l.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-c.png");
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-x: right, left, center;
   position: absolute;
   top: 0;
   left: 0;
@@ -288,15 +291,18 @@
   z-index: 2;
 }
 .profilePanel_e2cafe::after {
-  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/window-bottom.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-r.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-l.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-c.png");
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-x: right, left, center;
   padding: 0;
   content: "";
   top: 100%;
   left: 0;
   transform: translateY(-100%);
-  height: 25px;
+  height: 14px;
 }
 .userPanelOuter_eb00b1.userProfileOuterUnthemed_e14365.profileColors_ac6ab4,
 .userPanelOuter_eb00b1.userProfileOuterThemed__1fbd7.profileColors_ac6ab4.theme-light {
@@ -332,10 +338,9 @@
     rgba(144, 244, 228, 1) 2px,
     rgba(144, 244, 228, 1) 5px,
     rgba(77, 35, 207, 1) 5px,
-    rgba(77, 35, 207, 1) 6px,
-    rgb(148, 110, 231) 6px
+    rgba(77, 35, 207, 1) 6px
   );
-  width: 10px;
+  width: 7px;
   z-index: 2;
 }
 
@@ -401,6 +406,7 @@
   background: transparent;
 }
 .container__694a1 {
+  border-radius: 0;
   background: transparent;
 }
 
@@ -461,7 +467,42 @@
 }
 
 /* input */
-.form_d8a4a1 {
-  background: transparent;
-  border-top: var(--ame-border);
+.channelChatWrapper__43f43 .form_d8a4a1 {
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-r.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-l.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-c.png"),
+    linear-gradient(
+      90deg,
+      rgba(77, 35, 207, 1) 2px,
+      rgba(144, 244, 228, 1) 2px,
+      rgba(144, 244, 228, 1) 7px,
+      rgba(77, 35, 207, 1) 7px,
+      rgba(77, 35, 207, 1) 9px,
+      hsl(var(--ame-white)) 9px,
+      hsl(var(--ame-white)) 98.5%,
+      rgba(77, 35, 207, 1) 98.5%,
+      rgba(77, 35, 207, 1) 98.9%,
+      rgba(144, 244, 228, 1) 98.9%,
+      rgba(144, 244, 228, 1) 99.7%,
+      rgba(77, 35, 207, 1) 99.7%
+    );
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-x: right, left, center;
+  background-position-y: bottom;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* chat input */
+.channelChatWrapper__43f43
+  .form_d8a4a1
+  .channelTextArea_c2094b.channelTextArea__648e5 {
+  margin-bottom: 19px;
+}
+.channelChatWrapper__43f43
+  .form_d8a4a1
+  .channelTextArea_c2094b.channelTextArea__648e5
+  .scrollableContainer_ff917f.themedBackground__3a4c0 {
+  border-radius: 0;
 }
