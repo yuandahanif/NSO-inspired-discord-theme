@@ -22,9 +22,22 @@
   --ame-font-optical-sizing: auto;
   --ame-font-weight: 600;
   --ame-font-style: normal;
+  --ame-scroll-thumb-color: #db8ed6;
+  --ame-scroll-track-color: #9fbfce;
 
   /* override */
   --divider-color: var(--ame-main-pink);
+  --scrollbar-auto-scrollbar-color-thumb: var(--ame-scroll-thumb-color);
+  --scrollbar-auto-scrollbar-color-track: var(--ame-scroll-track-color);
+  --scrollbar-auto-thumb: var(--ame-scroll-thumb-color);
+  --scrollbar-auto-track: var(--ame-scroll-track-color);
+  --scrollbar-thin-thumb: var(--ame-scroll-thumb-color);
+  --scrollbar-thin-track: var(--ame-scroll-track-color);
+}
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  border-radius: 0 !important;
 }
 
 /* pixelated font override */
@@ -376,4 +389,73 @@
 .container__3673d {
   background: transparent;
   height: auto;
+}
+
+/* Streaming ================================================================================================================================================================ */
+.wrapper__6bf2d.noChat_ce920d.video__004a2.chatSidebarOpen_f2e544 {
+  background-color: hsl(var(--ame-white));
+}
+
+/* chat =====================*/
+.channelChatWrapper__43f43 {
+  background: transparent;
+}
+.container__694a1 {
+  background: transparent;
+}
+
+/* chat header */
+.channelChatWrapper__43f43 .container__26baa[aria-label="Channel header"] {
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-r.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-l.png"),
+    url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-c.png");
+  background-size: contain, contain, contain;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position-x: right, left, center;
+}
+.channelChatWrapper__43f43
+  .container__26baa[aria-label="Channel header"]
+  .children_cde9af
+  .iconWrapper_de6cd1 {
+  display: none;
+}
+.channelChatWrapper__43f43
+  .container__26baa[aria-label="Channel header"]
+  .children_cde9af
+  .titleWrapper_d6133e {
+  margin-left: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.channelChatWrapper__43f43 .children_cde9af:after,
+.channelChatWrapper__43f43 .children_cde9af:after {
+  border-right: 2px solid var(--ame-blue);
+}
+
+/* close icon */
+.channelChatWrapper__43f43
+  .container__26baa
+  .toolbar__62fb5
+  .iconWrapper_de6cd1.clickable_ce0925[aria-label="Close"]
+  .icon_ae0b42 {
+  color: hsl(var(--ame-border-color));
+}
+
+/* chat */
+.channelChatWrapper__43f43 .messagesWrapper_add28b.group-spacing-16 {
+  background: linear-gradient(
+    90deg,
+    rgba(77, 35, 207, 1) 2px,
+    rgba(144, 244, 228, 1) 2px,
+    rgba(144, 244, 228, 1) 7px,
+    rgba(77, 35, 207, 1) 7px,
+    rgba(77, 35, 207, 1) 9px,
+    hsl(var(--ame-white)) 9px,
+    hsl(var(--ame-white)) 98.5%,
+    rgba(77, 35, 207, 1) 98.5%,
+    rgba(77, 35, 207, 1) 98.9%,
+    rgba(144, 244, 228, 1) 98.9%,
+    rgba(144, 244, 228, 1) 99.7%,
+    rgba(77, 35, 207, 1) 99.7%
+  );
 }
