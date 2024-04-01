@@ -459,3 +459,9 @@
     rgba(77, 35, 207, 1) 99.7%
   );
 }
+
+/* input */
+.form_d8a4a1 {
+  background: transparent;
+  border-top: var(--ame-border);
+}
