@@ -221,12 +221,14 @@
 
 /* user popout =============================================================  */
 /* from user list on right panel */
-.layer__6b5c3 {
+:is(.layer__6b5c3):has(
+    .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4
+  ) {
   right: calc(248px - 8px) !important;
 }
 
 /* from profile on bottom left */
-.layer__6b5c3[style*="left"] {
+:is(.layer__6b5c3):has(#account-switch-account) {
   left: 100px !important;
   right: unset !important;
 }
