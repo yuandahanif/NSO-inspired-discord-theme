@@ -219,8 +219,7 @@
   background: hsla(var(--ame-white), 0.5);
 }
 
-/* ============================================================= */
-/* user popout */
+/* user popout =============================================================  */
 /* from user list on right panel */
 .layer__6b5c3[id="popout_7299"] {
   right: calc(248px - 8px) !important;
@@ -232,48 +231,16 @@
 }
 
 .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
-  background: linear-gradient(
-    261deg,
-    #dab9ff 13.66%,
-    #ffb9f0 42.55%,
-    #ffbcd0 85.7%
-  );
   border-radius: 0;
   border: var(--ame-border);
 }
-.userPopoutInner_e90432.userProfileInner__61cc1.userProfileInnerThemedNonPremium_ed9022 {
+.userPopoutInner_e90432.userProfileInner__61cc1 {
   background: transparent;
 }
 
 /* user banner */
 .userProfileInner__61cc1 {
   border-radius: 0;
-}
-.bannerSVGWrapper__8a38c {
-  mask {
-    background: transparent;
-    border-bottom: var(--ame-border);
-    stroke: #78efff;
-  }
-
-  rect {
-    fill: #78efff;
-  }
-
-  .banner__6d414.popoutBannerPremium__84487.bannerPremium__69560.roundedBanner__16aa6 {
-    border-bottom: thin solid yellow;
-    box-sizing: content-box;
-  }
-}
-
-.userProfileInnerThemedNonPremium_ed9022 {
-  background: transparent;
-}
-.userProfileInner__61cc1:before {
-  background: transparent;
-}
-.userPopoutOverlayBackground_bf6444.overlayBackground__2666e {
-  background: transparent;
 }
 
 /* DM screeen ================================================================================================================================================================ */
@@ -356,12 +323,22 @@
   z-index: 2;
 }
 
+/* user banner without notro */
+.banner__6d414.panelBanner__7d7e2.bannerPremium__69560[style*="background-color"] {
+  background-color: hsla(var(--ame-white)) !important;
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/Henshin.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .none_ff9f86.scrollerBase__65223 {
   background: var(--ame-white);
 }
 .userPanelInnerThemed_c2aed9 {
   background: transparent;
 }
+
 /* Overiding User custom color !shuldnt do this */
 .userProfileOuterThemed__1fbd7 {
   /* background: transparent !important; */

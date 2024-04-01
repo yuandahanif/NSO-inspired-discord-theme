@@ -20,10 +20,12 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 
 - [ ] Class-updater don't cover `id` case eg `[id="popout_7299"]`, but idk if the `id` change on update.
 
-## Preview
+## Preview (some parts are outdated)
 
 ![Preview Server](./preview/dc-preview-main.png)
-![Preview DM](./preview/dc-preview-dm.png)
+
+| ![Preview DM](./preview/dc-preview-dm.png) | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png) |
+|-------------------------------------------------|---------------------------------------------------------------------|
 
 ## Installation
 
