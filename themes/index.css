@@ -198,14 +198,12 @@
 
 /* group title */
 .membersGroup_cad095.container__43554 {
-  border-bottom: var(--ame-border);
-  padding: 7px 0px 7px 7px;
+  padding: 10px 0px 7px 7px;
   height: auto;
 }
 /* member list */
 .member_aa4760.member_b44d5d.container_a48b21 {
   background: hsla(var(--ame-white), 0.3);
-  border-bottom: var(--ame-border);
   max-width: 240px;
   border-radius: 0;
   margin-left: 0;
