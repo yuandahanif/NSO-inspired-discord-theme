@@ -51,16 +51,6 @@
   font-style: var(--ame-font-style);
   color: var(--ame-blue);
 }
-
-.container_d1f8f5 {
-  /* background: linear-gradient(
-    261deg,
-    #dab9ff 13.66%,
-    #ffb9f0 42.55%,
-    #ffbcd0 85.7%
-  ); */
-}
-
 /* server navigation ===========================================================================================*/
 .wrapper__216eb.guilds__2b93a {
   background: #eaffdb;
@@ -70,14 +60,6 @@
     /** FIXME: discord top badge not working */
     background: #eaffdb;
   }
-
-  /* .wrapper__9916c path {
-    display: none;
-  } */
-  /* .wrapper__9916c .selected__501f5 .childWrapper_a6ce15,
-  .wrapper__9916c .childWrapper_a6ce15 {
-    background: white;
-  } */
 
   /* folder */
   .expandedFolderBackground_b1385f {
@@ -260,8 +242,64 @@
 }
 
 /* DM screeen ================================================================================================================================================================ */
+.content__76dcf:has([aria-label=" (channel)"]) {
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/JINEBG.webp");
+  background-repeat: repeat;
+  background-size: 200px;
+
+  .sidebar_e031be {
+    background: transparent;
+  }
+
+  .chat__52833 {
+    background: transparent;
+  }
+
+  .searchBar__621ec {
+    background: transparent;
+    border-bottom: var(--ame-border);
+  }
+
+  /* .message_ccca67.cozyMessage__9f4fd.groupStart__7b93c.wrapper_a62503.cozy_f5c119.zalgo__39311,
+  .messageListItem__050f9 {
+    background: #d0e5ff;
+  } */
+  .scrollerInner__37fee[data-list-id="chat-messages"] {
+    /* own message */
+    /* li:has(.button_d4bf9b[aria-label="Edit"]) {
+      background: #000;
+    } */
+
+    /* friend message */
+    /* li:has(.button_d4bf9b[aria-label="Reply"]) {
+      background: red;
+    } */
+  }
+
+  /* chat input */
+  .form_d8a4a1 {
+    background: rgba(180, 156, 211, 0.8);
+    padding-left: 0;
+    padding-right: 0;
+
+    .channelTextArea_c2094b.channelTextArea__648e5 {
+      margin-bottom: 0;
+      border-radius: 0;
+
+      .scrollableContainer_ff917f.themedBackground__3a4c0.webkit__8d35a {
+        border-radius: 0;
+        padding-left: 0;
+
+        .inner__9fd0b.sansAttachButton__5f863 {
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+}
 .privateChannels__9b518,
-.theme-light .scroller__89969 {
+.theme-light .scroller__89969,
+.chatContent_f087cb:has(+ .profilePanel_e2cafe) {
   background: transparent;
 }
 
