@@ -33,6 +33,23 @@
   --scrollbar-auto-track: var(--ame-scroll-track-color);
   --scrollbar-thin-thumb: var(--ame-scroll-thumb-color);
   --scrollbar-thin-track: var(--ame-scroll-track-color);
+
+  /* server navigation bg */
+  --background-tertiary: #eaffdb;
+  --background-tertiary: #000;
+
+  /* channel list */
+  --background-secondary: linear-gradient(90deg, #eaffdb, #78efff);
+  --background-secondary: #000;
+
+  /* main chat */
+  --background-primary: linear-gradient(
+    261deg,
+    #dab9ff 13.66%,
+    #ffb9f0 42.55%,
+    #ffbcd0 85.7%
+  );
+  --background-primary: #000;
 }
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-track,
@@ -53,7 +70,6 @@
 }
 /* server navigation ===========================================================================================*/
 .wrapper__216eb.guilds__2b93a {
-  background: #eaffdb;
   border-right: var(--ame-border);
 
   .wrapper__8436d {
@@ -84,12 +100,7 @@
 
 /* main content ===========================================================================================*/
 .chat__52833 {
-  background: linear-gradient(
-    261deg,
-    #dab9ff 13.66%,
-    #ffb9f0 42.55%,
-    #ffbcd0 85.7%
-  );
+  background: var(--background-primary);
 }
 
 /* sidebar left ============================================================================= */
@@ -101,7 +112,7 @@
   flex: 0 0 auto;
   overflow: hidden;
   border-right: var(--ame-border);
-  background: linear-gradient(90deg, #eaffdb, #78efff);
+  background: var(--background-secondary);
 
   .container__7e23c {
     background: transparent;

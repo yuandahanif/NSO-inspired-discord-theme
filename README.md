@@ -11,9 +11,9 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 ## Todo/Idea list
 
 - [ ] Dark theme for [ame-profile](https://angelkawaii.com/en/ame-profile/)
-- [ ] Add a custom background
+- [x] Add a custom background
 - [ ] Add custom icons
-- [ ] Add JINE frame border to user popout
+- [x] Add JINE frame border to ~~user popout~~ DM profile
 - [ ] Minify output CSS
 
 ## Preview (some parts are outdated)
