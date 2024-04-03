@@ -214,16 +214,26 @@
 
 /* user popout =============================================================  */
 /* from user list on right panel */
-:is(.layer__6b5c3):has(
+:is(.layer__6b5c3[style*="right"]):has(
     .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4
   ) {
   right: calc(248px - 8px) !important;
+
+  .layer__6b5c3 {
+    right: 0 !important;
+  }
 }
 
 /* from profile on bottom left */
 :is(.layer__6b5c3):has(#account-switch-account) {
-  left: 100px !important;
+  left: 72px !important;
   right: unset !important;
+  bottom: 50% !important;
+  transform: translateY(50%) !important;
+
+  .accountProfilePopoutWrapper_d4887f {
+    left: 0;
+  }
 }
 
 .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
