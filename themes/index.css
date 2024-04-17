@@ -227,7 +227,7 @@
 /* user popout =============================================================  */
 /* from user list on right panel */
 :is(.layer__6b5c3[style*="right"]):has(
-    .userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4
+    .userPopoutOuter_d67f56.userProfileOuter__35e59.userProfileOuterUnthemed__9741c.profileColors_ac6ab4
   ) {
   right: calc(248px - 8px) !important;
 
@@ -248,16 +248,16 @@
   }
 }
 
-.userPopoutOuter__3884e.userProfileOuter__4ac83.userProfileOuterUnthemed_e14365.profileColors_ac6ab4 {
+.userPopoutOuter_d67f56.userProfileOuter__35e59.userProfileOuterUnthemed__9741c.profileColors_ac6ab4 {
   border-radius: 0;
   border: var(--ame-border);
 }
-.userPopoutInner_e90432.userProfileInner__61cc1 {
+.userPopoutInner_ac0960.userProfileInner__8ff35 {
   background: transparent;
 }
 
 /* user banner */
-.userProfileInner__61cc1 {
+.userProfileInner__8ff35 {
   border-radius: 0;
 }
 
@@ -385,12 +385,12 @@
   transform: translateY(-100%);
   height: 14px;
 }
-.userPanelOuter_eb00b1.userProfileOuterUnthemed_e14365.profileColors_ac6ab4,
-.userPanelOuter_eb00b1.userProfileOuterThemed__1fbd7.profileColors_ac6ab4.theme-light {
+.userPanelOuter_df01a5.userProfileOuterUnthemed__9741c.profileColors_ac6ab4,
+.userPanelOuter_df01a5.userProfileOuterThemed_a425f3.profileColors_ac6ab4.theme-light {
   position: relative;
 }
-.userPanelOuter_eb00b1.userProfileOuterUnthemed_e14365.profileColors_ac6ab4::before,
-.userPanelOuter_eb00b1.userProfileOuterThemed__1fbd7.profileColors_ac6ab4.theme-light::before {
+.userPanelOuter_df01a5.userProfileOuterUnthemed__9741c.profileColors_ac6ab4::before,
+.userPanelOuter_df01a5.userProfileOuterThemed_a425f3.profileColors_ac6ab4.theme-light::before {
   content: "";
   position: absolute;
   top: 0;
@@ -406,8 +406,8 @@
   width: 7px;
   z-index: 2;
 }
-.userPanelOuter_eb00b1.userProfileOuterUnthemed_e14365.profileColors_ac6ab4::after,
-.userPanelOuter_eb00b1.userProfileOuterThemed__1fbd7.profileColors_ac6ab4.theme-light::after {
+.userPanelOuter_df01a5.userProfileOuterUnthemed__9741c.profileColors_ac6ab4::after,
+.userPanelOuter_df01a5.userProfileOuterThemed_a425f3.profileColors_ac6ab4.theme-light::after {
   content: "";
   position: absolute;
   top: 0;
@@ -437,15 +437,15 @@
 .none_ff9f86.scrollerBase__65223 {
   background: var(--ame-white);
 }
-.userPanelInnerThemed_c2aed9 {
+.userPanelInnerThemed__651e4 {
   background: transparent;
 }
 
 /* Overiding User custom color !shuldnt do this */
-.userProfileOuterThemed__1fbd7 {
+.userProfileOuterThemed_a425f3 {
   /* background: transparent !important; */
 }
-.userProfileOuterUnthemed_e14365 {
+.userProfileOuterUnthemed__9741c {
   background: hsl(var(--ame-white)) !important;
 }
 
