@@ -60,6 +60,29 @@
   color: var(--ame-blue);
 }
 
+/* general - chatbox channel */
+.form_a7d72e.formWithLoadedChatInput_a7d72e {
+  padding: 0;
+}
+.channelTextArea_a7d72e.channelTextArea_bdf0de {
+  margin-bottom: 0px;
+}
+
+/* general - chatbox DM */
+.scrollableContainer_bdf0de.themedBackground_bdf0de {
+  border-radius: 0;
+}
+
+/* general - activity button */
+.channelAppLauncher_df39bd {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-left: var(--ame-border);
+}
+.buttonContainer_df39bd.app-launcher-entrypoint {
+  background-color: #fff;
+}
+
 /* user popout - wrapper */
 .outer_c69a7b.biteSize_c69a7b {
   border-radius: 0;
@@ -409,21 +432,18 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
 }
 
 /* streaming */
-.wrapper_d880dc.noChat_d880dc.video_d880dc.chatSidebarOpen_d880dc {
-  background-color: hsl(var(--ame-white));
-}
-
-/* streaming - chat */
-.channelChatWrapper_d880dc {
-  background: transparent;
-}
 .container_d1c246 {
   border-radius: 0;
   background: transparent;
 }
 
+/* streaming - chat */
+.chatLayerWrapper_d1c246 {
+  background-color: hsl(var(--ame-white));
+}
+
 /* streaming - chat - header */
-.channelChatWrapper_d880dc .container_fc4f04[aria-label="Channel header"] {
+.chatLayerWrapper_d1c246 .container_fc4f04[aria-label="Channel header"] {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-r.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-l.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-c.png");
@@ -431,13 +451,15 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-position-x: right, left, center;
 }
-.channelChatWrapper_d880dc
+
+/* streaming - chat - header - title */
+.chatLayerWrapper_d1c246
   .container_fc4f04[aria-label="Channel header"]
   .children_fc4f04
   .iconWrapper_fc4f04 {
   display: none;
 }
-.channelChatWrapper_d880dc
+.chatLayerWrapper_d1c246
   .container_fc4f04[aria-label="Channel header"]
   .children_fc4f04
   .titleWrapper_fc4f04 {
@@ -445,13 +467,13 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   margin-top: auto;
   margin-bottom: auto;
 }
-.channelChatWrapper_d880dc .children_fc4f04:after,
-.channelChatWrapper_d880dc .children_fc4f04:after {
+.chatLayerWrapper_d1c246 .children_fc4f04:after,
+.chatLayerWrapper_d1c246 .children_fc4f04:after {
   border-right: 2px solid var(--ame-blue);
 }
 
 /* streaming - chat - close icon */
-.channelChatWrapper_d880dc
+.chatLayerWrapper_d1c246
   .container_fc4f04
   .toolbar_fc4f04
   .iconWrapper_fc4f04.clickable_fc4f04[aria-label="Close"]
@@ -460,7 +482,7 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
 }
 
 /* streaming - chat - chats */
-.channelChatWrapper_d880dc .messagesWrapper_e2e187.group-spacing-16 {
+.chatLayerWrapper_d1c246 .messagesWrapper_e2e187.group-spacing-16 {
   background: linear-gradient(
     90deg,
     rgba(77, 35, 207, 1) 2px,
@@ -479,7 +501,7 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
 }
 
 /* streaming - chat - input */
-.channelChatWrapper_d880dc .form_a7d72e {
+.messagesWrapper_e2e187 + .form_a7d72e.formWithLoadedChatInput_a7d72e {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-r.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-l.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-c.png"),
@@ -504,27 +526,5 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
 
   padding-left: 10px;
   padding-right: 10px;
-}
-
-/* general - chatbox channel */
-.form_a7d72e.formWithLoadedChatInput_a7d72e {
-  padding: 0;
-}
-.channelTextArea_a7d72e.channelTextArea_bdf0de {
-  margin-bottom: 0px;
-}
-
-/* general - chatbox DM */
-.scrollableContainer_bdf0de.themedBackground_bdf0de {
-  border-radius: 0;
-}
-
-/* general - activity button */
-.channelAppLauncher_df39bd {
-  margin-bottom: 0px;
-  margin-left: 0px;
-  border-left: var(--ame-border);
-}
-.buttonContainer_df39bd.app-launcher-entrypoint {
-  background-color: #fff;
+  padding-bottom: 18px;
 }
