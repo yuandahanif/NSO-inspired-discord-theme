@@ -16,7 +16,7 @@ async function main() {
       const [key, value] = [diffsContent[i], diffsContent[i + 1]];
       themeContent = themeContent.replaceAll(key, value);
     }
-
+    
     await Bun.write(config.outputDir, themeContent);
   } catch (error) {
     console.log(error);
