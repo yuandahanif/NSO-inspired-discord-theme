@@ -3,7 +3,14 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49"
+  },
+  "scripts": {
+    "update-class": "bun scripts/update-class.ts",
+    "watch": "bun scripts/watch.ts",
+    "build": "bun scripts/build.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -12,5 +19,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/yuandahanif/NSO-inspired-discord-theme"
+  },
+  "dependencies": {
+    "postcss-cli": "^11.0.0"
   }
 }
