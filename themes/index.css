@@ -48,18 +48,38 @@
   border-radius: 0 !important;
 }
 
-/* pixelated font override */
-.defaultColor_a595eb.heading-md-semibold__76ba1.defaultColor_e9e35f.title_fc4f04,
-.lineClamp1_a595eb.text-md-semibold__8664f.name_fd6364,
-.profilePanel_b433b4::before,
-.membersGroup_cbd271.container_cc72c1 {
+/* override - pixelated font */
+.title_fc4f04 /* channel header*/,
+.text_a5ad5c /* member role title*/,
+.name_fd6364 /* server header*/ {
   font-family: var(--ame-font-family);
   font-optical-sizing: var(--ame-font-optical-sizing);
   font-weight: var(--ame-font-weight);
   font-style: var(--ame-font-style);
   color: var(--ame-blue);
 }
-/* server navigation ===========================================================================================*/
+
+/* user popout */
+/* user popout - wrapper */
+.outer_c69a7b.biteSize_c69a7b {
+  border-radius: 0;
+  border: var(--ame-border);
+}
+
+/* user banner */
+.userProfileInner_c69a7b {
+  border-radius: 0;
+}
+/* user banner - animation */
+foreignObject > .banner_d5fdb1[style*="background-color"] {
+  background-color: hsl(var(--ame-white)) !important;
+  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/Henshin.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* server navigation */
 .wrapper_fea3ef.guilds_a4d4d9 {
   border-right: var(--ame-border);
   background: #eaffdb;
@@ -69,33 +89,27 @@
     background: #eaffdb;
   }
 
-  /* folder */
+  /* server navigation - folder */
   .expandedFolderBackground_bc7085 {
     opacity: 0.6;
   }
 
-  /* active indicator */
+  /* server navigation - active indicator */
   .item_c4cd66 {
     background-color: var(--ame-main-pink);
   }
-
   .numberBadge__40d6f.base__5ed84.eyebrow_c15ff6.baseShapeRound_df8943 {
     background-color: var(--ame-main-pink) !important;
   }
 
-  /* unread button */
+  /* server navigation - unread button */
   .mention_edf32f {
     background-color: var(--ame-main-pink);
     opacity: 0.9;
   }
 }
 
-/* main content ===========================================================================================*/
-.chat_a7d72e {
-  background: var(--background-primary);
-}
-
-/* sidebar left ============================================================================= */
+/* sidebar channel list */
 .sidebar_a4d4d9 {
   display: flex;
   flex-direction: column;
@@ -110,13 +124,13 @@
     background: transparent;
   }
 
-  /* server header */
+  /* sidebar channel list - server name */
   .header_fd6364 {
     border-bottom: var(--ame-border);
     box-shadow: none;
   }
 
-  /* profile ================================ */
+  /* sidebar channel list - profile bottom */
   .panels_a4d4d9 {
     background-color: transparent;
 
@@ -127,28 +141,45 @@
   }
 }
 
-/* header chat ================================ */
-.theme-light .themed_fc4f04,
+/* sidebar channel list - profile bottom - profile popuut */
+:is(.layer_cd0de5):has(.menus_ad5fac) {
+  left: 72px !important;
+  right: unset !important;
+  bottom: 50% !important;
+  transform: translateY(50%) !important;
+
+  .accountProfilePopoutWrapper_b2ca13 {
+    left: 0;
+  }
+}
+
+/* main chat */
+/* main chat - wrapper */
+.chat_a7d72e {
+  background: var(--background-primary);
+}
+
+/* main chat - header */
 .themed_fc4f04 {
   background: transparent;
 }
-.theme-light .children_fc4f04:after,
 .children_fc4f04:after {
   background: transparent;
   border-right: var(--ame-border);
 }
+/* main chat - header - # icon */
 .icon_fc4f04 {
   color: var(--ame-blue);
 }
 
-/* toolbar right */
+/* main chat - header - toolbar right */
 .toolbar_fc4f04 {
   .iconWrapper_fc4f04.clickable_fc4f04 .icon_fc4f04 {
     color: hsl(var(--ame-white));
   }
 }
 
-/* main chat ================================ */
+/* main chat - content */
 .content_a7d72e:before {
   border-bottom: var(--ame-border);
   box-shadow: none;
@@ -158,12 +189,11 @@
   border-right: var(--ame-border);
   box-shadow: none;
 }
-.theme-light .form_a7d72e:before,
 .form_a7d72e:before {
   background: transparent;
 }
 
-/* mention message */
+/* main chat - content - mention message */
 .message_d5deea.cozyMessage_d5deea.mentioned_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca {
   background: hsla(var(--ame-white), 0.5);
 }
@@ -171,7 +201,7 @@
   background: var(--ame-main-pink);
 }
 
-/* new message devider ================================ */
+/* main chat - content - new message divider */
 .divider_c2654d {
   border-top-color: var(--ame-main-pink) !important;
 }
@@ -189,7 +219,7 @@
   background: var(--ame-main-pink);
 }
 
-/* sidebar right ================================ */
+/* main chat - content - sidebar right */
 .container_cbd271 {
   background: transparent;
 }
@@ -199,12 +229,12 @@
   padding: 0;
 }
 
-/* group title */
-.membersGroup_cbd271.container_cc72c1 {
+/* main chat - content - sidebar right - role title */
+.membersGroup_cbd271 {
   padding: 10px 0px 7px 7px;
   height: auto;
 }
-/* member list */
+/* main chat - content - sidebar right - member list */
 .member_a31c43.member_cbd271.container_d808b0 {
   background: hsla(var(--ame-white), 0.3);
   max-width: 240px;
@@ -215,50 +245,9 @@
   background: hsla(var(--ame-white), 0.5);
 }
 
-/* user popout =============================================================  */
-/* from user list on right panel */
-:is(.layer_cd0de5[style*="right"]):has(
-    .userPopoutOuter_c69a7b.userProfileOuter_c69a7b.userProfileOuterUnthemed_c69a7b.profileColors_ac6ab4
-  ) {
+/*  main chat - content - sidebar right - user popout*/
+:is(.layer_cd0de5[style*="right"]) {
   right: calc(248px - 8px) !important;
-
-  .layer_cd0de5 {
-    right: 0 !important;
-  }
-}
-
-/* from profile on bottom left */
-:is(.layer_cd0de5):has(#account-switch-account) {
-  left: 72px !important;
-  right: unset !important;
-  bottom: 50% !important;
-  transform: translateY(50%) !important;
-
-  .accountProfilePopoutWrapper_b2ca13 {
-    left: 0;
-  }
-}
-
-.userPopoutOuter_c69a7b.userProfileOuter_c69a7b.userProfileOuterUnthemed_c69a7b.profileColors_ac6ab4 {
-  border-radius: 0;
-  border: var(--ame-border);
-}
-.userPopoutInner_c69a7b.userProfileInner_c69a7b {
-  background: transparent;
-}
-
-/* user banner */
-.userProfileInner_c69a7b {
-  border-radius: 0;
-}
-
-.banner_d5fdb1.popoutBannerPremium_c3e427.bannerPremium_c3e427.roundedBanner_c3e427[style*="background-color"],
-.banner_d5fdb1.popoutBanner_c3e427[style*="background-color"] {
-  background-color: hsl(var(--ame-white)) !important;
-  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/Henshin.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* DM screeen ================================================================================================================================================================ */
@@ -424,16 +413,15 @@
   background: hsl(var(--ame-white)) !important;
 }
 
-/* Friend ==================================================== */
+/* friends */
 .peopleColumn_c2739c {
   background: hsl(var(--ame-white));
 }
-
 .upperContainer_fc4f:has(.tabBar_c2739c.topPill_a0[aria-label="Friends"]) svg {
   color: hsl(var(--ame-border-color));
 }
 
-/* Actibe now right panel */
+/* friends - right panel */
 .nowPlayingColumn_c2739c {
   display: flex;
   flex-direction: column;
@@ -446,12 +434,12 @@
   background: transparent;
 }
 
-/* Streaming ================================================================================================================================================================ */
+/* streaming */
 .wrapper_d880dc.noChat_d880dc.video_d880dc.chatSidebarOpen_d880dc {
   background-color: hsl(var(--ame-white));
 }
 
-/* chat =====================*/
+/* streaming - chat */
 .channelChatWrapper_d880dc {
   background: transparent;
 }
@@ -460,7 +448,7 @@
   background: transparent;
 }
 
-/* chat header */
+/* streaming - chat - header */
 .channelChatWrapper_d880dc .container_fc4f04[aria-label="Channel header"] {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-r.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-t-l.png"),
@@ -488,7 +476,7 @@
   border-right: 2px solid var(--ame-blue);
 }
 
-/* close icon */
+/* streaming - chat - close icon */
 .channelChatWrapper_d880dc
   .container_fc4f04
   .toolbar_fc4f04
@@ -497,7 +485,7 @@
   color: hsl(var(--ame-border-color));
 }
 
-/* chat */
+/* streaming - chat - chats */
 .channelChatWrapper_d880dc .messagesWrapper_e2e187.group-spacing-16 {
   background: linear-gradient(
     90deg,
@@ -516,7 +504,7 @@
   );
 }
 
-/* input */
+/* streaming - chat - input */
 .channelChatWrapper_d880dc .form_a7d72e {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-r.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-l.png"),
@@ -544,7 +532,7 @@
   padding-right: 10px;
 }
 
-/* chatbox channel */
+/* general - chatbox channel */
 .form_a7d72e.formWithLoadedChatInput_a7d72e {
   padding: 0;
 }
@@ -552,12 +540,12 @@
   margin-bottom: 0px;
 }
 
-/* chatbox DM */
+/* general - chatbox DM */
 .scrollableContainer_bdf0de.themedBackground_bdf0de {
   border-radius: 0;
 }
 
-/* activity button */
+/* general - activity button */
 .channelAppLauncher_df39bd {
   margin-bottom: 0px;
   margin-left: 0px;
