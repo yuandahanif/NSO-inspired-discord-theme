@@ -1,7 +1,7 @@
 const config = {
   diffFile: "./submodules/Update-Classes/Changes.txt",
   themeDir: "./themes/index.css",
-  outputDir: "./output/ame-chan.theme.css",
+  outputDir: "./themes/index.css",
 };
 
 async function main() {
@@ -16,11 +16,11 @@ async function main() {
       const [key, value] = [diffsContent[i], diffsContent[i + 1]];
       themeContent = themeContent.replaceAll(key, value);
     }
-    
+
     await Bun.write(config.outputDir, themeContent);
   } catch (error) {
     console.log(error);
   }
 }
 
-export default main;
+main();

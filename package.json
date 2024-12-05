@@ -8,6 +8,7 @@
     "postcss": "^8.4.49"
   },
   "scripts": {
+    "update-class": "bun scripts/update-class.ts",
     "watch": "bun scripts/watch.ts",
     "build": "bun scripts/build.ts"
   },
