@@ -1,12 +1,3 @@
-/**
- * @name ame-chan
- * @description Needy streamer overload inspired theme
- * @author yume_0
- * @version 0.0.1
- * @source https://github.com/yuandahanif/ame-chan
- * @authorId 378907976267726859
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
 :root {
@@ -289,22 +280,6 @@
     border-bottom: var(--ame-border);
   }
 
-  /* .message_d5deea.cozyMessage_d5deea.groupStart_d5deea.wrapper_f9f2ca.cozy_f9f2ca.zalgo_f9f2ca,
-  .messageListItem_d5deea {
-    background: #d0e5ff;
-  } */
-  .scrollerInner_e2e187[data-list-id="chat-messages"] {
-    /* own message */
-    /* li:has(.button_f7e168[aria-label="Edit"]) {
-      background: #000;
-    } */
-
-    /* friend message */
-    /* li:has(.button_f7e168[aria-label="Reply"]) {
-      background: red;
-    } */
-  }
-
   /* chat input */
   .form_a7d72e {
     background: rgba(180, 156, 211, 0.8);
@@ -454,8 +429,7 @@
   background: hsl(var(--ame-white));
 }
 
-.upperContainer_fc4f:has(.tabBar_c2739c.topPill_a0[aria-label="Friends"])
-  svg {
+.upperContainer_fc4f:has(.tabBar_c2739c.topPill_a0[aria-label="Friends"]) svg {
   color: hsl(var(--ame-border-color));
 }
 
@@ -570,15 +544,25 @@
   padding-right: 10px;
 }
 
-/* chat input */
-.channelChatWrapper_d880dc
-  .form_a7d72e
-  .channelTextArea_a7d72e.channelTextArea_bdf0de {
-  margin-bottom: 19px;
+/* chatbox channel */
+.form_a7d72e.formWithLoadedChatInput_a7d72e {
+  padding: 0;
 }
-.channelChatWrapper_d880dc
-  .form_a7d72e
-  .channelTextArea_a7d72e.channelTextArea_bdf0de
-  .scrollableContainer_bdf0de.themedBackground_bdf0de {
+.channelTextArea_a7d72e.channelTextArea_bdf0de {
+  margin-bottom: 0px;
+}
+
+/* chatbox DM */
+.scrollableContainer_bdf0de.themedBackground_bdf0de {
   border-radius: 0;
+}
+
+/* activity button */
+.channelAppLauncher_df39bd {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  border-left: var(--ame-border);
+}
+.buttonContainer_df39bd.app-launcher-entrypoint {
+  background-color: #fff;
 }
