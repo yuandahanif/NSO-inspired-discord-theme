@@ -501,7 +501,7 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
 }
 
 /* streaming - chat - input */
-.messagesWrapper_e2e187 + .form_a7d72e.formWithLoadedChatInput_a7d72e {
+.chatLayerWrapper_d1c246 .messagesWrapper_e2e187 + .form_a7d72e.formWithLoadedChatInput_a7d72e {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-r.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-l.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-c.png"),
