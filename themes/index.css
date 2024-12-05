@@ -51,7 +51,8 @@
 /* override - pixelated font */
 .title_fc4f04 /* channel header*/,
 .text_a5ad5c /* member role title*/,
-.name_fd6364 /* server header*/ {
+.name_fd6364 /* server header*/,
+.scrollerBase_c49869::before /* DM Profile header */ {
   font-family: var(--ame-font-family);
   font-optical-sizing: var(--ame-font-optical-sizing);
   font-weight: var(--ame-font-weight);
@@ -59,7 +60,6 @@
   color: var(--ame-blue);
 }
 
-/* user popout */
 /* user popout - wrapper */
 .outer_c69a7b.biteSize_c69a7b {
   border-radius: 0;
@@ -250,46 +250,31 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   right: calc(248px - 8px) !important;
 }
 
-/* DM screeen ================================================================================================================================================================ */
+/* DM */
 .content_a4d4d9:has([aria-label=" (channel)"]) {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/JINEBG.webp");
   background-repeat: repeat;
   background-size: 200px;
 
+  /* DM - sidebar left */
   .sidebar_a4d4d9 {
     background: transparent;
   }
 
-  .chat_a7d72e {
-    background: transparent;
-  }
-
+  /* DM - search */
   .searchBar_f0963d {
     background: transparent;
     border-bottom: var(--ame-border);
   }
 
-  /* chat input */
+  /* DM - chat */
+  .chat_a7d72e {
+    background: transparent;
+  }
+
+  /* DM - chat - input */
   .form_a7d72e {
-    background: rgba(180, 156, 211, 0.8);
-    padding-left: 0;
-    padding-right: 0;
-
-    .channelTextArea_a7d72e.channelTextArea_bdf0de {
-      margin-bottom: 0;
-      border-radius: 0;
-
-      .scrollableContainer_bdf0de.themedBackground_bdf0de.webkit__8d35a {
-        border-radius: 0;
-        padding-left: 0;
-
-        .inner_bdf0de.sansAttachButton_bdf0de {
-          padding-left: 6px;
-        }
-      }
-    }
-
-    /* typing animation */
+    /* DM - chat - input - typing animation */
     .typing_d7ebeb.base_d7ebeb {
       bottom: unset;
       display: flex;
@@ -304,19 +289,27 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
     }
   }
 }
+
+/* DM - sidebar left - wrapper */
 .privateChannels_f0963d,
 .theme-light .scroller_c47fa9,
 .chatContent_a7d72e:has(+ .profilePanel_b433b4) {
   background: transparent;
 }
 
-/* DM right profile panel */
-.profilePanel_b433b4 {
+/* DM - profile panel */
+/* DM - profile panel - action */
+.wrapper_cb78f1.panel_cb78f1 {
+  top: 40px;
+  right: 10px;
+}
+
+.outer_c69a7b .none_c49869.scrollerBase_c49869 {
   padding-top: 35px;
   padding-bottom: 14px;
 }
-.profilePanel_b433b4::before,
-.profilePanel_b433b4::after {
+.outer_c69a7b .none_c49869.scrollerBase_c49869::before,
+.outer_c69a7b .none_c49869.scrollerBase_c49869::after {
   box-sizing: border-box;
   padding: 11px 0 0 30px;
   content: "Pro f il e";
@@ -333,9 +326,9 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   height: 35px;
   overflow: hidden;
   max-height: 42px;
-  z-index: 2;
+  z-index: 3;
 }
-.profilePanel_b433b4::after {
+.outer_c69a7b .none_c49869.scrollerBase_c49869::after {
   background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-r.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-l.png"),
     url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/frame/f-b-c.png");
@@ -348,13 +341,13 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   left: 0;
   transform: translateY(-100%);
   height: 14px;
+  z-index: 3;
 }
-.userPanelOuter_c69a7b.userProfileOuterUnthemed_c69a7b.profileColors_ac6ab4,
-.userPanelOuter_c69a7b.userProfileOuterThemed_c69a7b.profileColors_ac6ab4.theme-light {
+
+.inner_c69a7b.panel_c69a7b {
   position: relative;
 }
-.userPanelOuter_c69a7b.userProfileOuterUnthemed_c69a7b.profileColors_ac6ab4::before,
-.userPanelOuter_c69a7b.userProfileOuterThemed_c69a7b.profileColors_ac6ab4.theme-light::before {
+.inner_c69a7b.panel_c69a7b::before {
   content: "";
   position: absolute;
   top: 0;
@@ -370,8 +363,7 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   width: 7px;
   z-index: 2;
 }
-.userPanelOuter_c69a7b.userProfileOuterUnthemed_c69a7b.profileColors_ac6ab4::after,
-.userPanelOuter_c69a7b.userProfileOuterThemed_c69a7b.profileColors_ac6ab4.theme-light::after {
+.inner_c69a7b.panel_c69a7b::after {
   content: "";
   position: absolute;
   top: 0;
@@ -388,29 +380,11 @@ foreignObject > .banner_d5fdb1[style*="background-color"] {
   width: 7px;
   z-index: 2;
 }
-
-/* user banner without notro */
-.banner_d5fdb1.panelBanner_c3e427.bannerPremium_c3e427[style*="background-color"] {
-  background-color: hsla(var(--ame-white)) !important;
-  background: url("https://raw.githubusercontent.com/yuandahanif/NSO-inspired-discord-theme/main/themes/assets/Henshin.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.none_c49869.scrollerBase_c49869 {
-  background: var(--ame-white);
-}
-.userPanelInnerThemed_c69a7b {
-  background: transparent;
-}
-
-/* Overiding User custom color !shuldnt do this */
-.userProfileOuterThemed_c69a7b {
-  /* background: transparent !important; */
-}
-.userProfileOuterUnthemed_c69a7b {
-  background: hsl(var(--ame-white)) !important;
+/* DM - profile panel - footer */
+.footer_a823cd {
+  background: white;
+  position: relative;
+  z-index: 4;
 }
 
 /* friends */
