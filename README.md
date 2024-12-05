@@ -14,24 +14,45 @@ A Discord theme inspired by the visual novel, [NEEDY STREAMER OVERLOAD](https://
 - [ ] Add a custom background
 - [ ] Add custom icons
 - [ ] Add JINE frame border to user popout
-- [ ] Minify output CSS
+- [x] Minify output CSS
 
 ## Preview (some parts are outdated)
 
 The blur part is not part of the theme, it's just for privacy.
 
 | ![Preview Server](./preview/dc-preview-main.png)<br>server and user list |
-|:---:|
+| :----------------------------------------------------------------------: |
 
 | ![Preview DM](./preview/dc-preview-dm.png)<br>add frame border to DM profile | ![Preview Animate non Nitro user](./preview/dc-profile-animate.png)<br>override animation for non Nitro user (I think this is questionable to remove discord user customization) |
-|:---:|---|
+| :--------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 | ![Preview Stream chat](./preview/dc-preview-stream.png)<br>stream chat |
-|:---:|
+| :--------------------------------------------------------------------: |
 
 ## Installation
 
-There is no installation guide yet, but you can use [Vencord](https://vencord.dev/) to test this theme. Just copy the code from `themes/index.css` and paste it into the custom CSS box.
+There is no installation guide yet, but you can use [Vencord](https://vencord.dev/) to test this theme. Copy the code from `output/ame-chan.theme.css` and paste it into the custom CSS box or copy the file into `themes` folder of your vencord installation.
+
+## Development
+
+Install [Bun](https://bun.sh/)(preferred) or [Node.js](https://nodejs.org/) and run the following commands:
+
+```bash
+bun install
+```
+
+To run the file watcher run this, it will ask for the vencord theme folder:
+(if you use linux default vencord installation, just hit enter)
+
+```bash
+bun run watch
+```
+
+To build the theme run this, the output will be in `output/ame-chan.theme.css`:
+
+```bash
+bun run build
+```
 
 ## Resources
 
